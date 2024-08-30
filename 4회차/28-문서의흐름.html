@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>문서의 흐름</title>
+    <style>
+        .container{
+            height: 400px;
+            border: 1px solid black;
+        }
+
+        #first{
+            float: right;
+            /*float 기본값은 none*/
+        }
+        #second{
+            float: left;
+        }
+        p{
+            clear: both;
+        }
+        /*흐름은 무시했지만 공간은 차지해서 다른 공간에 균열이 생김*/
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img id="first"
+        src="kyubin.jpeg" width="160">
+        <img id="second"
+        src="kyubin.jpeg" width="160">
+        <p>
+            큐빈은 치지직에서 방송하고 있는 버튜버이며,
+            방송 시작은 트위치에서 했다.
+            첫 방송 날짜는 2023년 5월 10일이지만,
+            치지직으로 넘어온 날짜인 2024년 2월 2일을 기준으로 기념일을 센다. 
+        </p>
+        </div>
+</body>
+</html>

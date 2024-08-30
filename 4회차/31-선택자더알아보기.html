@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>선택자 더 알아보기</title>
+    <style>
+        /*
+        기호와 함께 사용하는 속성 선택자
+        * : 값의 포함 여부
+        ^ : 값의 시작 여부
+        $ : 값의 끝 여부
+        */
+        [width]{
+            border: 5px dashed red;
+        }
+        
+        p > em{
+            color: blue;
+            /*
+            공백은 ~밑에 있는 ~
+            > 자식은 한단계 밑에 있는
+            */
+        }
+
+        #sam + p{
+            color: orange;
+            /*
+            +는 ~다음의 ~
+            ~는 ~의 형제 모든 ~
+            형제 선택자는 뒤이어 등장하는 형제들을 대상으로 한다!
+            */
+        }
+        
+    </style>
+</head>
+<body>
+    <img src="kyubin.jpeg" width="120" alt="큐빈">
+    <img src="kyubin.jpeg" width="120">
+    <img src="kyubin.jpeg" width="120" id="sam">
+    <p>큐빈은 민트색상 머리에 보라색 눈을 가진 캐릭터입니다.</p>
+    <p>버추얼 캐릭터로 방송하는 크리에이터입니다.</p>
+    <p>방송 시작일은 <em>2023년 5월 10일</em>입니다.</p>
+    <p>방송하는 게 취미이자 스트레스 푸는 방법입니다.</p>
+</body>
+</html>
